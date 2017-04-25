@@ -12,7 +12,15 @@ module.exports = {
                 loader: 'style-loader!css-loader'
             },
             {
-                test: /\.(png|jpg|eot|woff2|woff|svg|ttf)$/,
+                test: /\.(png|jpg)$/,
+                loader: "file-loader?name=assets/[path][name].[ext]"
+            },
+            {
+                test:/\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+                loader: "file-loader?name=assets/[path][name].[ext]"
+            },
+            {
+                test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
                 loader: "file-loader?name=assets/[path][name].[ext]"
             }
         ]

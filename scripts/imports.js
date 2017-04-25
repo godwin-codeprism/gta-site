@@ -5,6 +5,7 @@ require('../css/bootstrap.css');
 require('../css/global.css');
 require('../css/home.css');
 require('../node_modules/animate.css/animate.min.css');
+require('../css/font-awesome.css');
 
 require('../node_modules/bootstrap-sass/assets/javascripts/bootstrap');
 require('./home')

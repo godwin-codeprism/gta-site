@@ -1,12 +1,32 @@
-.main-container{
-    width:100%;
-    height:auto;
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+    transition: all .51s ease;
+    font-size: medium;
+    font-weight: 500;
+}
+
+.nav>li>a {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.main-container {
+    width: 100%;
+    height: auto;
     position: relative;
 }
-.content-container{
+
+.content-container {
     background-color: white;
 }
 
-.remove-padding{
+.remove-padding {
     padding: 0px !important;
+}
+
+.navbar-trans {
+    background-color: rgba(255, 255, 255, 0.13);
+    box-shadow: none;
+    border-bottom: 1px solid #00c3d4;
 }

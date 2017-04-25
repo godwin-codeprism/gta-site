@@ -4,12 +4,19 @@ $(window).resize(function () {
 })
 $(window).scroll(function () {
     setBlurClip();
+    navControl();
 })
 
 function init() {
     setBlurClip();
 }
-
+function navControl(){
+    if($(window).scrollTop() > 20){
+        $('nav').removeClass('navbar-trans');
+    }else{
+        $('nav').addClass('navbar-trans');
+    }
+}
 window.setBlurClip = function () {
     var elm = $('.blurbox:eq(0)');
     var _top = Math.round(elm.offset().top) - $(window).scrollTop();
