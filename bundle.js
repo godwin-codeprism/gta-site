@@ -2885,7 +2885,7 @@
 
 
 	// module
-	exports.push([module.id, ".banner-fixed {\r\n    position: fixed;\r\n    top: 0px;\r\n    left: 0px;\r\n    width: 100%;\r\n    height: 700px;\r\n}\r\n\r\n.banner-1 {\r\n    background-image: url(" + __webpack_require__(50) + ");\r\n    background-position: center center;\r\n}\r\n\r\n.blurbox-container {\r\n    position: absolute;\r\n    top: 0;\r\n    left: 0;\r\n    width: 100%;\r\n    height: 700px;\r\n    padding-top: 18%;\r\n}\r\n\r\n.blurbox-background {\r\n    background-image: url(" + __webpack_require__(50) + ");\r\n    background-position: center center;\r\n    filter: blur(15px);\r\n    position: fixed;\r\n}\r\n\r\n.blurbox {\r\n    margin: auto;\r\n    width: 100%;\r\n    height: 350px;\r\n    box-shadow: inset 0px 0px 0px 10px rgba(255, 255, 255, 0.5);\r\n    position: relative;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n\r\n.blurbox-content {\r\n    width: 95%;\r\n    height: 87%;\r\n    background-color: rgba(255, 255, 255, 0.5);\r\n}", ""]);
+	exports.push([module.id, ".banner-fixed {\r\n    position: fixed;\r\n    top: 0px;\r\n    left: 0px;\r\n    width: 100%;\r\n    height: 700px;\r\n}\r\n\r\n.banner-1 {\r\n    background-image: url(" + __webpack_require__(50) + ");\r\n    background-position: center center;\r\n}\r\n\r\n.blurbox-container {\r\n    position: absolute;\r\n    top: 0;\r\n    left: 0;\r\n    width: 100%;\r\n    height: 700px;\r\n    padding-top: 18%;\r\n}\r\n\r\n.blurbox-background {\r\n    background-image: url(" + __webpack_require__(50) + ");\r\n    background-position: center center;\r\n    filter: blur(15px);\r\n    position: fixed;\r\n}\r\n\r\n.blurbox {\r\n    margin: auto;\r\n    width: 100%;\r\n    height: 350px;\r\n    box-shadow: inset 0px 0px 0px 10px rgba(255, 255, 255, 0.5);\r\n    position: relative;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n\r\n.blurbox-content {\r\n    background-color: rgba(255, 255, 255, 0.5);\r\n}\r\n.blurbox-content-container{\r\n    height: 100%;\r\n    width: 100%;\r\n    padding: 20px;\r\n    display: flex;\r\n}", ""]);
 
 	// exports
 
@@ -5335,14 +5335,14 @@
 	    setBlurClip();
 	}
 
-	function setBlurClip() {
+	window.setBlurClip = function () {
 	    var elm = $('.blurbox:eq(0)');
 	    var _top = Math.round(elm.offset().top) - $(window).scrollTop();
 	    var _left = Math.round(elm.offset().left);
-	    var _bottom = Math.round(elm.parent().height() - (elm.offset().top + elm.height())) + $(window).scrollTop();
+	    var _bottom = Math.round(700 - (elm.offset().top + elm.height())) + $(window).scrollTop();
 	    var _right = Math.round(elm.offset().left);
 	    var clipPath = 'inset(' + _top + 'px ' + _right + 'px ' + _bottom + 'px ' + _left + 'px)';
-	    var clip = 'rect(' + Math.round(elm.offset().top) + 'px ' + Math.round(elm.offset().left + elm.width()) + 'px ' + (Math.round(elm.offset().top + elm.height()) - $(window).scrollTop()) + 'px ' + elm.offset().left + 'px)';
+	    var clip = 'rect(' + Math.round(elm.offset().top - $(window).scrollTop()) + 'px ' + Math.round(elm.offset().left + elm.width()) + 'px ' + (Math.round(elm.offset().top + elm.height()) - $(window).scrollTop()) + 'px ' + elm.offset().left + 'px)';
 	    $('.blurbox-background:eq(0)').css({
 	        'clip-path': clipPath,
 	        'clip': clip
