@@ -1,0 +1,12 @@
+.main-container{
+    width:100%;
+    height:auto;
+    position: relative;
+}
+.content-container{
+    background-color: white;
+}
+
+.remove-padding{
+    padding: 0px !important;
+}

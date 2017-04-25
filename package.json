@@ -10,6 +10,13 @@
   "license": "MIT",
   "dependencies": {
     "animate.css": "^3.5.2",
+    "bootstrap-sass": "^3.3.7",
     "jquery": "^2.2.4"
+  },
+  "devDependencies": {
+    "css-loader": "^0.28.0",
+    "file-loader": "^0.11.1",
+    "style-loader": "^0.16.1",
+    "url-loader": "^0.5.8"
   }
 }
