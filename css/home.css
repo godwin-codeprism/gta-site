@@ -26,7 +26,10 @@
     filter: blur(15px);
     position: fixed;
 }
-
+.blurbox-outer-container{
+    width:100%;
+    height: 700px;
+}
 .blurbox {
     margin: auto;
     width: 100%;
@@ -46,4 +49,10 @@
     width: 100%;
     padding: 20px;
     display: flex;
+}
+
+.icon-block img{
+    width: 100%;
+    height: 200px;
+    margin: auto;
 }
