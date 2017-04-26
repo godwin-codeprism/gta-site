@@ -6,6 +6,10 @@
     font-weight: 500;
 }
 
+.navbar-brand {
+    font-family: 'Josefin Slab';
+}
+
 .nav>li>a {
     padding-left: 30px;
     padding-right: 30px;
