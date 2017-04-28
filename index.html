@@ -6,6 +6,7 @@
     <!--<meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
     <title>GTA</title>
     <script src="bundle.js"></script>
 </head>
@@ -19,7 +20,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-                <a class="navbar-brand" href="#"><!--<small><b>GTA</b> Custom Home Numbers</small>--></a>
+                <a class="navbar-brand" href="#"><small><b>GTA</b> Custom Home Numbers</small></a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
@@ -27,7 +28,13 @@
                     <li><a href="#">ABOUT</a></li>
                     <li><a href="#">CONTACT</a></li>
                     <li class="hidden-xs hidden-sm"><a style="padding-left:5px;padding-right:5px;"><i class="fa ion-minus fa-rotate-90"></i></a></li>
-                    <li class="hidden-xs hidden-sm"><a href="#" style="padding-left:15px;"><i class="icon ion-android-call"></i><span style="font-family:Roboto"> &nbsp;416-998-7659</span></a></li>
+                    <li>
+                        <a href="#" style="padding: 20px 5px;display:inline-block;">
+                            <i class="icon ion-android-call"></i>
+                            <span> &nbsp;<a class="phone-number" href="tel:+1-416-998-7659">416-998-7659</a> /
+                        <a class="phone-number" href="tel:+1-416-669-2144">416-669-2144</a></span>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -37,14 +44,17 @@
         <div class="blurbox-outer-container">
             <div class="blurbox-container container-fluid">
                 <div class="blurbox-container blurbox-background"></div>
+                <div class="container-fuild hidden-md hidden-lg" style="width:100%;height:50px;"></div>
                 <div class="container-fluid remove-padding">
                     <div class="hidden-xs hidden-sm col-md-1 col-lg-2 remove-padding"></div>
                     <div class="col-xs-12 col-sm-12 col-md-9 col-lg-8 remove-padding">
                         <div class="blurbox">
                             <div class="container blurbox-content-container">
                                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 blurbox-content text-center">
-                                    <p>Godwin</p>
-                                    <p>Vinny Carole</p>
+                                    <div class="container-fuild remove-padding">
+                                        <p>GTA Custom Home Numbers</p>
+                                        <p>If You Can Imagine It We Can Design It</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -54,17 +64,84 @@
             </div>
         </div>
         <div class="content-container">
-            <h3 class="text-center">Lorem ipsum dolor sit amet</h3>
+            <h3 class="text-center">MANUFACTURED IN THE GTA​</h3>
             <hr class="under-heading">
             <div class="container-fluid text-center icon-block">
-                <div class="col-lg-4">
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 icon-inner-block">
                     <img src="assets/img/hammer.svg" alt="Built to last">
+                    <h4>MADE TO LAST</h4>
+                    <p><span>Our weatherproof signs are</span><span>made up of 1/4 acrylic</span></p>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 icon-inner-block">
                     <img src="assets/img/pencil.svg" alt="YOU CHOOSE THE SIZE">
+                    <h4>YOU CHOOSE THE SIZE</h4>
+                    <p><span>Choose the perfect letter size for</span><span>your home from 8-12 inches</span></p>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 icon-inner-block">
                     <img src="assets/img/home.svg" alt="SO MANY GREAT STYLES TO CHOOSE FROM!">
+                    <h4>SO MANY GREAT STYLES <span style="display:block;margin-top:5px;">TO CHOOSE FROM!</span> </h4>
+                    <p>
+                        <span>Fill out our online form and send </span>
+                        <span>us your address to see how</span>
+                        <span>great your home number will look!</span>
+                        <span><b>Free of charge</b></span>
+                        <span><b>No obligation to buy</b></span>
+                    </p>
+                </div>
+            </div>
+            <div class="block-form container-fluid">
+                <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8" style="border-right:1px solid #ddd;">
+                    <h3>ONLINE PROMO</h3>
+                    <hr class="under-heading" style="margin-left:0px;margin-bottom:10px;">
+                    <p class="offer">Book Now & SAVE $50!</p>
+                    <form class="form-horizontal">
+                        <fieldset>
+                            <div class="form-group">
+                                <div class="col-lg-10">
+                                    <input type="text" class="form-control" id="inputname" placeholder="Name">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-lg-10">
+                                    <input type="tel" class="form-control" name="usrtel" placeholder="Telephone Number">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-lg-10">
+                                    <input type="text" class="form-control" id="inputEmail" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-lg-10">
+                                    <p>Best way of contact</p>
+                                    <div class="radio">
+                                        <label><input type="radio" name="optionsRadios" id="BestContact" value="phone" checked=""> Phone &nbsp;</label>
+                                        <label><input type="radio" name="optionsRadios" id="BestContact" value="email" > Email  &nbsp;</label>
+                                        <label><input type="radio" name="optionsRadios" id="BestContact" value="Home Address"> Home Address  &nbsp;</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-lg-10">
+                                    <textarea class="form-control" rows="3" id="textArea" placeholder="Your Message"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-lg-10 text-right">
+                                    <button type="button" class="btn btn-primary btn-md btn-block">Submit</button>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <div class="container-fluid">
+                        <h3>Find Us on Facebook</h3>
+                        <hr class="under-heading" style="margin-left:0px;">
+                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fcursivehomenumbers%2F&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"class="hidden-xs hidden-sm"></iframe>
+                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fcursivehomenumbers%2F&tabs=timeline&width=280&height=500&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=true&appId" width="280" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" class="hidden-md hidden-lg"></iframe>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

@@ -10,13 +10,13 @@
 	.st3{display:inline;}
 	.st4{fill:none;stroke:#555555;stroke-width:2;stroke-miterlimit:10;}
 	.st5{fill:#555555;}
-	.st6{font-family:'MonotypeCorsiva';}
-	.st7{font-size:23.6538px;}
+	.st6{font-family: Raleway;font-style: italic;font-weight:600;}
+	.st7{font-size:20.6538px;}
 </style>
 <font horiz-adv-x="2048">
 <!-- Monotype Corsiva(TM) is a trademark of The Monotype Corporation which may be registered in certain jurisdictions. -->
 <!-- Copyright: Copyright 2017 Adobe System Incorporated. All rights reserved. -->
-<font-face font-family="MonotypeCorsiva" units-per-em="2048" underline-position="-246" underline-thickness="102"/>
+<font-face font-family="Roboto" units-per-em="2048" underline-position="-246" underline-thickness="102"/>
 <missing-glyph horiz-adv-x="1536" d="M256,0l0,1280l1024,0l0,-1280M288,32l960,0l0,1216l-960,0z"/>
 <glyph unicode=" " horiz-adv-x="450"/>
 <glyph unicode="1" horiz-adv-x="901" d="M856,1209l32,0l-138,-540l-115,-501C624,126 618,98 618,83C618,72 624,63 635,56C646,49 672,43 712,39C742,36 771,32 800,27l-20,-50C637,-8 537,0 480,0C397,0 308,-8 211,-23l17,50C263,36 302,46 347,55C391,64 421,77 437,95C459,118 482,174 506,263l108,413C649,833 667,922 667,943C667,966 657,978 638,978C623,978 556,951 437,898l-20,50C590,1031 696,1086 735,1113C774,1140 814,1172 856,1209z"/>

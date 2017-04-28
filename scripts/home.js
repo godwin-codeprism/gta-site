@@ -1,19 +1,29 @@
 $(window).on('load', init);
 $(window).resize(function () {
     setBlurClip();
+    $('.icon-inner-block').hide();
 })
 $(window).scroll(function () {
     setBlurClip();
     navControl();
+    iconBlocksDisplay($(window).scrollTop());
 })
 
 function init() {
     setBlurClip();
+    $('.icon-inner-block').hide();
 }
-function navControl(){
-    if($(window).scrollTop() > 20){
+
+function iconBlocksDisplay(w) {
+    if(w > 400){
+        $('.icon-inner-block').show();
+    }
+}
+
+function navControl() {
+    if ($(window).scrollTop() > 20) {
         $('nav').removeClass('navbar-trans');
-    }else{
+    } else {
         $('nav').addClass('navbar-trans');
     }
 }

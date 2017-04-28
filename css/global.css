@@ -1,3 +1,7 @@
+body{
+    font-size: 16px;
+    color: #212121;
+}
 .navbar {
     margin-bottom: 0;
     border-radius: 0;
@@ -10,9 +14,23 @@
     font-family: 'Josefin Slab';
 }
 
+.navbar-trans {
+    background-color: rgba(255, 255, 255, 0.13);
+    box-shadow: none;
+    border-bottom: 1px solid #00c3d4;
+}
+
+.navbar-trans .active a{
+    background-color: rgba(244, 244, 244, 0.55) !important;
+}
 .nav>li>a {
     padding-left: 30px;
     padding-right: 30px;
+}
+.phone-number{
+    display: inline !important;
+    padding: 5px !important;
+    font-family:Roboto;
 }
 
 .main-container {
@@ -25,17 +43,13 @@
     background-color: white;
     padding-top:50px;
     min-height: 500px;
+    box-shadow: 0px -5px 20px rgba(0, 0, 0, 0.19);
 }
 
 .remove-padding {
     padding: 0px !important;
 }
 
-.navbar-trans {
-    background-color: rgba(255, 255, 255, 0.13);
-    box-shadow: none;
-    border-bottom: 1px solid #00c3d4;
-}
 
 .under-heading{
     border: 1px solid #212121;
