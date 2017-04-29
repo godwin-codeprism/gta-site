@@ -12,10 +12,11 @@ $(window).scroll(function () {
 function init() {
     setBlurClip();
     $('.icon-inner-block').hide();
+    $('.gallery-img-block').click(openModal);
 }
 
 function iconBlocksDisplay(w) {
-    if(w > 400){
+    if (w > 400) {
         $('.icon-inner-block').show();
     }
 }
@@ -39,4 +40,10 @@ window.setBlurClip = function () {
         'clip-path': clipPath,
         'clip': clip
     });
+}
+
+function openModal(e) {
+    var src = $(this).find('img').attr('src');
+    $('.image-model img').attr('src',src);
+    $('.image-model').removeClass('image-model-hidden');
 }
