@@ -68,6 +68,44 @@
     display: flex;
 }
 
+.flag-design {
+    font-size: 50%;
+    padding: 90px 10px;
+    border-left: 60px solid #bf0a30;
+    border-right: 60px solid #bf0a30;
+    background-image: url(../img/ca_leaf.svg);
+    background-position: center center;
+    background-size: 140%;
+    background-repeat: no-repeat;
+}
+
+
+/* Small devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {
+    .flag-design {
+        font-size: 69%;
+    }
+}
+
+
+/* Medium devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+    .flag-design {
+        font-size: 80%;
+    }
+}
+
+
+/* Large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+    .flag-design {
+        font-size: 100%;
+    }
+}
+
 .icon-block img {
     width: 100%;
     height: 200px;
@@ -107,8 +145,51 @@
     animation: flash 3s;
     animation-iteration-count: infinite;
 }
-.gallery-block{
-    padding-top:60px;
-    width:100%;
+
+.gallery-block {
+    padding-top: 60px;
+    width: 100%;
     height: 100%;
+}
+
+.gallery-img-block {
+    position: relative;
+    cursor: pointer;
+}
+
+.gallery-img-block img {
+    width: 100%;
+    box-shadow: 1px 1px 1px rgba(69, 69, 69, 0.2), -1px -1px 1px rgba(69, 69, 69, 0.2);
+    transition: all .25s ease;
+}
+
+.gallery-img-block:hover img{
+    filter: blur(10px);
+    opacity: 0.5;
+    background-color: white;
+}
+.gallery-img-block:hover .view-img{
+    display: block;
+}
+.view-img {
+    position: absolute;
+    z-index: 1;
+    top: 23%;
+    left: 7%;
+    width: 90%;
+    height: 95%;
+    animation: zoomIn .25s;
+    display: none;
+}
+
+.view-img-inner {
+    width: 100%;
+    height: 100%;
+}
+
+.view-img-inner i {
+    font-size: 60px;
+    border: 1px solid #212121;
+    padding: 15px 27px;
+    border-radius: 50%;
 }
