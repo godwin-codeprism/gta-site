@@ -127,7 +127,7 @@
 
 .icon-inner-block {
     position: relative;
-    animation: fadeInUp 1s;
+    animation: fadeIn 1s;
 }
 
 .block-form {

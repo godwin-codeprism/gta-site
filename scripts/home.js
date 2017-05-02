@@ -11,7 +11,6 @@ $(window).scroll(function () {
 
 function init() {
     setBlurClip();
-    $('.icon-inner-block').hide();
     $('.gallery-img-block').click(openModal);
 }
 
@@ -46,4 +45,13 @@ function openModal(e) {
     var src = $(this).find('img').attr('src');
     $('.image-model img').attr('src',src);
     $('.image-model').removeClass('image-model-hidden');
+}
+
+window.scrollToForm = function(){
+    $('html, body').animate({
+        scrollTop: $('#inputname').offset().top - 210
+    }, 500);
+    setTimeout(function(){
+        $('#inputname').focus()
+    },500);
 }

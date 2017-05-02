@@ -3,6 +3,12 @@ body {
     color: #212121;
 }
 
+@media (min-width: 900px) {
+    .carousel-caption {
+      display: none; 
+    }
+  }
+
 .navbar {
     margin-bottom: 0;
     border-radius: 0;
@@ -12,7 +18,8 @@ body {
 }
 
 .navbar-brand {
-    font-family: 'Josefin Slab';
+    font-family: 'MonotypeCorsiva';
+    letter-spacing: 1px;
 }
 
 .navbar-trans {
@@ -24,9 +31,11 @@ body {
 .navbar-trans .active a {
     background-color: rgba(244, 244, 244, 0.55) !important;
 }
-.navbar-trans .navbar-collapse.collapse.in{
+
+.navbar-trans .navbar-collapse.collapse.in {
     background-color: white;
 }
+
 .nav>li>a {
     padding-left: 30px;
     padding-right: 30px;
@@ -116,13 +125,15 @@ footer {
 footer a {
     text-decoration: none;
 }
-
+.footer-brand{
+    text-decoration: none;
+}
 .footer-brand small {
     color: white;
-    font-family: 'Josefin Slab';
+    font-family: 'MonotypeCorsiva';
     font-size: 18px;
     line-height: 65px;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     font-weight: 500;
 }
 
