@@ -21,8 +21,6 @@
 }
 
 .blurbox-background {
-    background-image: url(../img/banner-1.jpg);
-    background-position: center top;
     filter: blur(15px);
     position: fixed;
 }

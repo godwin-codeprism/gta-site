@@ -4,6 +4,7 @@ window.$ = jQuery;
 require('../css/bootstrap.css');
 require('../css/global.css');
 require('../css/home.css');
+require('../css/about.css');
 require('../node_modules/animate.css/animate.min.css');
 require('../css/font-awesome.css');
 require('../css/ionicons.css');
