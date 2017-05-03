@@ -44,7 +44,7 @@
 .blurbox-content {
     font-family: Raleway;
     color: #212121;
-    font-size: xx-large;
+    font-size: 28px;
     text-transform: uppercase;
     font-weight: 300;
     display: flex;
@@ -66,6 +66,12 @@
     display: flex;
 }
 
+.btn-booknow {
+    font-family: Roboto;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
 .flag-design {
     font-size: 50%;
     padding: 90px 10px;
@@ -84,6 +90,9 @@
     .flag-design {
         font-size: 69%;
     }
+    .blurbox-content {
+        font-size: 36px;
+    }
 }
 
 
@@ -93,6 +102,9 @@
     .flag-design {
         font-size: 80%;
     }
+    .blurbox-content {
+        font-size: 36px;
+    }
 }
 
 
@@ -101,6 +113,9 @@
 @media (min-width: 1200px) {
     .flag-design {
         font-size: 100%;
+    }
+    .blurbox-content {
+        font-size: 40px;
     }
 }
 
@@ -161,14 +176,16 @@
     transition: all .25s ease;
 }
 
-.gallery-img-block:hover img{
+.gallery-img-block:hover img {
     filter: blur(10px);
     opacity: 0.5;
     background-color: white;
 }
-.gallery-img-block:hover .view-img{
+
+.gallery-img-block:hover .view-img {
     display: block;
 }
+
 .view-img {
     position: absolute;
     z-index: 1;

@@ -52,7 +52,29 @@ window.setBlurClip = function () {
 
 function openModal(e) {
     var src = $(this).find('img').attr('src');
-    $('.image-model img').attr('src', src.splice(src.length - 4, 0, "_xl"));
+    var src_xl = src.splice(src.length - 4, 0, "_xl");
+    var image_xl = new Image();
+    image_xl.src = src_xl;
+    image_xl.onload = function () {
+         $('.image-model img').removeClass('potrait_img_landscape');
+        $('.image-model img').removeClass('landscape_img_landscape');
+        $('.image-model img').removeClass('landscape_img');
+         $('.image-model img').removeClass('potrait_img');
+        if ($(window).width() < $(window).height()) {
+            if (this.width < this.height) {
+                $('.image-model img').addClass('potrait_img');
+            } else {
+                $('.image-model img').addClass('landscape_img');
+            }
+        } else {
+            if (this.width < this.height) {
+                $('.image-model img').addClass('potrait_img_landscape');
+            } else {
+                $('.image-model img').addClass('landscape_img_landscape');
+            }
+        }
+    }
+    $('.image-model img').attr('src', src_xl);
     $('.image-model').removeClass('image-model-hidden');
 }
 
