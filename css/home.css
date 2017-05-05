@@ -10,6 +10,11 @@
     background-image: url(../img/banner-1.jpg);
     background-position: center top;
 }
+.brand-name {
+    font-family: 'MonotypeCorsiva';
+    letter-spacing: 4px;
+    text-transform: none;
+}
 
 .blurbox-container {
     position: absolute;
