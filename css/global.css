@@ -190,6 +190,30 @@ footer a {
     height: 90%;
 }
 
+.error-msg {
+    display: none;
+}
+
+.form-hide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(245, 245, 245, 0.82);
+    top: 0;
+    left: 0;
+    display: flex;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    animation: zoomIn .25s ease;
+}
+
+.form-container {
+    position: relative;
+    z-index: 0;
+}
+
 
 /* Small devices (tablets, 768px and up) */
 

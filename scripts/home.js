@@ -21,6 +21,7 @@ function init() {
         setBlurClip();
     }
     $('.gallery-img-block').click(openModal);
+    $('form').submit(submitForm);
 }
 
 function iconBlocksDisplay(w) {
@@ -56,10 +57,10 @@ function openModal(e) {
     var image_xl = new Image();
     image_xl.src = src_xl;
     image_xl.onload = function () {
-         $('.image-model img').removeClass('potrait_img_landscape');
+        $('.image-model img').removeClass('potrait_img_landscape');
         $('.image-model img').removeClass('landscape_img_landscape');
         $('.image-model img').removeClass('landscape_img');
-         $('.image-model img').removeClass('potrait_img');
+        $('.image-model img').removeClass('potrait_img');
         if ($(window).width() < $(window).height()) {
             if (this.width < this.height) {
                 $('.image-model img').addClass('potrait_img');
@@ -85,4 +86,39 @@ window.scrollToForm = function () {
     setTimeout(function () {
         $('#inputname').focus()
     }, 500);
+}
+
+window.submitForm = function (e) {
+    e.preventDefault();
+    if (grecaptcha.getResponse().length > 0) {
+        $('[type="submit"]').addClass('disabled');
+        $('#recaptcha_msg').hide();
+        var data = {};
+        var rawData = JSON.parse(JSON.stringify($(this).serializeArray()));
+        rawData.forEach(function (element) {
+            data[element.name] = element.value;
+        }, this);
+        $.ajax({
+            type: "POST",
+            url: "./endpoints/send-mail.php",
+            dataType: 'text',
+            data: {
+                myData: JSON.stringify(data)
+            },
+            complete: function (r) {
+                if (r.responseText == "ok") {
+                    $('.form-hide').show();
+                    $('.form-hide').css('display', 'flex');
+                } else {
+                    $('#recaptcha_msg').html("Some thing went wrong! Please try again.");
+                    $('#recaptcha_msg').show();
+                    $('[type="submit"]').removeClass('disabled');
+                }
+            }
+        })
+    } else {
+        $('#recaptcha_msg').show();
+    }
+
+
 }
