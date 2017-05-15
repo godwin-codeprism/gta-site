@@ -81,6 +81,32 @@
     display: flex;
 }
 
+.about-us-caption {
+    width: 80%;
+    margin: auto;
+    line-height: 35px;
+    color: #696868;
+}
+
+.about-slider {
+    width: 100%;
+    box-shadow: 0px 0px 8px #36404c;
+}
+
+#myCarousel .item img {
+    max-height: 576px;
+    margin: auto;
+}
+
+#myCarousel .item {
+    padding: 15px;
+    min-height: 450px;
+}
+
+.carousel-inner {
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+}
+
 
 /* Small devices (tablets, 768px and up) */
 
