@@ -1,3 +1,76 @@
+/* latin-ext */
+@font-face {
+  font-family: 'TimesNewRoman';
+  font-style: italic;
+  font-weight: 600;
+  src: local('timesbi'), local('timesbi'), url(timesbi.woff) format('woff');
+}
+/* latin-ext */
+@font-face {
+  font-family: 'CacChampagne';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Cac_Champagne'), local('cac_champagne'), url(cac_champagne.woff) format('woff');
+}
+/* latin-ext */
+@font-face {
+  font-family: 'ALSScript';
+  font-style: normal;
+  font-weight: 400;
+  src: local('asl_script'), local('asl_script'), url(alsscrp.woff) format('woff');
+}
+/* latin-ext */
+@font-face {
+  font-family: 'DianaScript';
+  font-style: normal;
+  font-weight: 400;
+  src: local('diana_script'), local('diana_script'), url(diana_script.woff) format('woff');
+}
+/* latin-ext */
+@font-face {
+  font-family: 'EdwardianScript';
+  font-style: normal;
+  font-weight: 400;
+  src: local('EdwardianScript'), local('EdwardianScript'), url(Edwardian_Script_ITC.woff) format('woff');
+}
+/* latin-ext */
+@font-face {
+  font-family: 'SignPainter';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Sign-Painter'), local('Sign-Painter'), url(Sign-Painter.woff) format('woff');
+}
+/* latin-ext */
+@font-face {
+  font-family: 'BrushScript';
+  font-style: normal;
+  font-weight: 400;
+  src: local('BRUSHSCI'), local('BRUSHSCI'), url(BRUSHSCI.woff) format('woff');
+}
+/* latin-ext */
+@font-face {
+  font-family: 'SnellRoundhand';
+  font-style: normal;
+  font-weight: 400;
+  src: local('SnellRoundhand'), local('SnellRoundhand-Bold'), url(SnellRoundhand-Bold.woff) format('woff');
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Great Vibes';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Great Vibes'), local('GreatVibes-Regular'), url(6q1c0ofG6NKsEhAc2eh-3SYE0-AqJ3nfInTTiDXDjU4.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Great Vibes';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Great Vibes'), local('GreatVibes-Regular'), url(6q1c0ofG6NKsEhAc2eh-3Y4P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
 /* cyrillic-ext */
 @font-face {
   font-family: 'MonotypeCorsiva';
