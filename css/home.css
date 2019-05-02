@@ -216,3 +216,12 @@
     padding: 15px 27px;
     border-radius: 50%;
 }
+@media (max-width:768px){
+    .banner-1{
+        background-position: -250px -250px;
+        background-size: cover;
+    }
+    .blurbox-outer-container{
+        height: 450px;
+    }
+}
