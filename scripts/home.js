@@ -90,15 +90,16 @@ window.scrollToForm = function () {
 }
 
 window.submitForm = function (e) {
+    console.log(JSON.parse(JSON.stringify($(e.target).serializeArray())));
     e.preventDefault();
-    if (grecaptcha.getResponse().length > 0) {
+    if (grecaptcha.getResponse().length > 0 || grecaptcha.getResponse(1).length > 0) {
         $('[type="submit"]').addClass('disabled');
         $('#recaptcha_msg').hide();
         var data = {};
-        var rawData = JSON.parse(JSON.stringify($(this).serializeArray()));
+        var rawData = JSON.parse(JSON.stringify($(e.target).serializeArray()));
         rawData.forEach(function (element) {
             data[element.name] = element.value;
-        }, this);
+        }, e.target);
         $.ajax({
             type: "POST",
             url: "./endpoints/send-mail.php",
